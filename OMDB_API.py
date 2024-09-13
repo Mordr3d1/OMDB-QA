@@ -2,9 +2,7 @@ import subprocess
 import json
 import pytest
 
-API_KEY = ""
-
-BASE_URL = "http://www.omdbapi.com/"
+from config.config import API_KEY, BASE_URL
 
 def run_curl_command(url, params):
     command = ["curl", "-s", url + params]
